@@ -9,17 +9,20 @@
 <body>
     <?php
     //Variables
-    $characterName = "John";
+    $characterName = "John Jingle";
     $characterAge = 35;
     //Working with strings
     echo "The characters name is $characterName, his age is $characterAge \n";
-    echo "<br>";
+    echo "<br> strtolower: ";
     echo strtolower($characterName);
-    echo "<br>";
+    echo "<br> strtoupper: ";
     echo strtoupper($characterName);
-    echo "<br>";
+    echo "<br> string array char selection: ";
     echo $characterName[0];
-    
+    echo "<br> Replace sequence of characters: ";
+    echo str_replace("John", "Rodrigo", $characterName);
+    echo "<br> Replace sequence of characters: ";
+    echo substr($characterName, 5);
     
 
     ?>
