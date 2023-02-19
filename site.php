@@ -78,6 +78,13 @@
         echo "{$pluralNoun} are blue <br>";
         echo "I love {$celebrity} <br>";
     ?>
+    <form action="site.php" method="post">
+        Password: <input type="password" name="password"><br>
+        <input type="submit">
+    </form>
+    <?php 
+        echo $_POST["password"];
+    ?>
 </body>
 </html>
 
