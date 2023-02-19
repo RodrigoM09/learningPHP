@@ -8,9 +8,19 @@
 </head>
 <body>
     <?php
+    //Variables
     $characterName = "John";
     $characterAge = 35;
-    echo "The characters name is $characterName, his age is $characterAge";
+    //Working with strings
+    echo "The characters name is $characterName, his age is $characterAge \n";
+    echo "<br>";
+    echo strtolower($characterName);
+    echo "<br>";
+    echo strtoupper($characterName);
+    echo "<br>";
+    echo $characterName[0];
+    
+    
 
     ?>
 </body>
