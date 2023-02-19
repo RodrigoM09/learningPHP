@@ -49,9 +49,34 @@
         $name = $_GET["name"];
         $age = $_GET["age"];
         echo "Your name is $name";
+        echo "<br>";
         echo "Your age is $age";
-        
-    
+    ?>
+    <form action="site.php" method="get">
+        <input type="number" name="num1">
+        <br>
+        <input type="number" name="num2">
+        <input type="submit">
+    </form>
+    Answer: <?php if(isset($_GET['submit'])){
+
+     echo $_GET["num1"] + $_GET["num2"];
+
+}?>
+    <form action="site.php" method="get">
+        Color: <input type="text" name="color">
+        Plural Noun: <input type="text" name="pluralNoun">
+        Celebrity: <input type="text" name="celebrity">
+        <input type="submit">
+    </form>
+    <br>
+    <?php
+        $color = $_GET["color"];
+        $pluralNoun = $_GET["pluralNoun"];
+        $celebrity = $_GET["celebrity"];
+        echo "Roses are {$color} <br>";
+        echo "{$pluralNoun} are blue <br>";
+        echo "I love {$celebrity} <br>";
     ?>
 </body>
 </html>
