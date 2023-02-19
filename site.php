@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="site.php" method="get">
+        Name:<input type="text" name="name">
+        <br>
+        Age:<input type="number" name="age">
+        <input type="submit">
+    </form>
+    <br>
     <?php
         //Variables ------------------------------------------->
         $characterName = "John Jingle";
@@ -30,20 +37,22 @@
         $num = 10.4;
         $num++;
         echo $num;
+        echo "<br> round number to nearest whole number: ";
         echo round($num);
+        echo "<br> floor round number down to nearest whole number: ";
         echo floor($num);
+        echo "<br> ceil round number up to nearest whole number: ";
         echo ceil($num);
         echo "<br>";
-        //Working with inputs ------------------------------------------->        
+        //Working with inputs ------------------------------------------->
+        echo "use info typed into input: <br>";
+        $name = $_GET["name"];
+        $age = $_GET["age"];
+        echo "Your name is $name";
+        echo "Your age is $age";
         
-
     
-
     ?>
-    <form action="site.php" method="get">
-        Name: <input type="text" name="name">
-        <button type="submit"></button>
-    </form>
 </body>
 </html>
 
