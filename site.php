@@ -127,12 +127,37 @@
         sayHi("This is coming from a function!!");
         echo "<br>";
     ?>
-    <form>
-        <input type="number" name="num" method="get">
-    </form>
     <?php 
         function cube($num){
             return $num * $num * $num;
+        }
+        echo "This is the result of a cube function with a arguement of 4. <br> 4*4*4 = ";
+        echo $cubeResult = cube(4);
+    ?>
+    <?php // If Statements ---------------------------------------------------->
+        echo "<br>";
+        echo "If Statements------------------------------------------->";
+        echo "<br>";
+        $isMale = true;
+        $isTall = true;
+        if($isMale && $isTall){
+            echo "This is comming from a if statement-------->";
+            echo "<br>";
+            echo "You are a tall male";
+        } elseif($isMale && !$isTall){
+            echo "You are male but not tall";
+        } else {
+            echo "You are not a male";
+        }
+    ?>
+    <?php // While Loop ---------------------------------------------------->
+        echo "<br>";
+        echo "While Loop------------------------------------------->";
+        echo "<br>";
+        $index = 1;
+        while($index <= 5){
+            echo "$index <br>";
+            $index++;
         }
     ?>
 
