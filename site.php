@@ -125,8 +125,18 @@
             echo "$message";
         }
         sayHi("This is coming from a function!!");
+        echo "<br>";
+    ?>
+    <form>
+        <input type="number" name="num" method="get">
+    </form>
+    <?php 
+        function cube($num){
+            return $num * $num * $num;
+        }
     ?>
 
+    
 </body>
 </html>
 
