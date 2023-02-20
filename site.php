@@ -84,7 +84,49 @@
     </form>
     <?php 
         echo $_POST["password"];
+
+        //Arrays ----------------------------------------------->
+        echo "<br>";
+        echo "Arrays----------------------------------------------->";
+        echo "<br>";
+        $cars = array("Porsche","Ferrari","Bugatti","Lamborghini");
+        print_r($cars);
+        echo "<br>";
+        echo $cars[1];
     ?>
+    <?php //fruits[] signifys that an array will be inputted------------>
+    echo "<br>";
+    ?>
+    <form action="site.php" method="POST">
+        Apples:<input type="checkbox" name="fruits[]" value="apples"><br>
+        Oranges:<input type="checkbox" name="fruits[]" value="Oranges"><br>
+        Pears:<input type="checkbox" name="fruits[]" value="Pears"><br>
+        <input type="submit">
+    </form>
+    <?php 
+    $fruits = $_POST["fruits"];
+    $fruits = implode(",", $fruits);
+    echo "Check the boxes you want to add to the array [$fruits]";
+    ?>
+    <?php //Associative arrays ---------------------->
+        echo "<br>";
+        echo "Associative Arrays------------------------------------->";
+        $carModels = array("Ferrari"=>"F8 TRIBUTO","Porsche"=>"911 GT3","Bugatti"=>"Veyron","Lamborghini"=>"Diablo");
+        echo "<br>";
+        print_r($carModels);
+    ?>
+    <?php // functions ---------------------------------------------------->
+        echo "<br>";
+        echo "Functions------------------------------------------->";
+        echo "<br>";
+        function sayHi($message){
+            echo "Hello user!!";
+            echo "<br>";
+            echo "$message";
+        }
+        sayHi("This is coming from a function!!");
+    ?>
+
 </body>
 </html>
 
