@@ -173,6 +173,11 @@
         echo "For Loop------------------------------------------->";
         echo "<br>";
         
+        $index = 1;
+        while($index <= 5){
+            echo "$index <br>";
+            $index++;
+        }
     ?>
 
     
