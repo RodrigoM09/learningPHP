@@ -105,7 +105,7 @@
     </form>
     <?php 
     $fruits = $_POST["fruits"];
-    $fruits = implode(",", $fruits);
+    // $fruits = implode(",", $fruits);
     echo "Check the boxes you want to add to the array [$fruits]";
     ?>
     <?php //Associative arrays ---------------------->
@@ -173,10 +173,15 @@
         echo "For Loop------------------------------------------->";
         echo "<br>";
         
+        echo  "While Loop------------------------------------------->";
         $index = 1;
         while($index <= 5){
             echo "$index <br>";
             $index++;
+        }
+        echo "For Loop------------------------------------------->";
+        for($i = 1; $i <= 5; $i++){
+            echo "$i <br>";
         }
     ?>
 
